@@ -1,0 +1,51 @@
+/* ------------------------------------------------------------------
+    Template All Variables Defined - Value Change with Your's Need
+ -------------------------------------------------------------------- */
+$white:#FFF;
+$gray:#F3F3F3;
+$red: #FF8888;
+$base:#197BFF;
+$black:#000;
+$info: #FAA21A;
+$green: #3FAD48;
+$primary: #8DC63F;
+$secondary: #F47102;
+
+// Theme Color - Defualt Colors
+$textcolor: #696969;
+$section-bg: #E2F8F8;
+$theme-color: #446A78;
+$theme-dark: #febc35;
+$second-color: #F9F9FB;
+$second-color-dark: #000b2c;
+
+@mixin transition($transition) {
+    -webkit-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -ms-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+@mixin overlay($color, $opacity) {
+    z-index: 1;
+    position: relative;
+
+    &:before {
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        background: rgba($color, $opacity);
+        @include transition(all 0.3s ease);
+    }
+}
