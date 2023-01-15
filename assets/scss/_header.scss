@@ -1,7 +1,4 @@
 header {
-    top: 0%;
-    left: 0%;
-    width: 100%;
     z-index: 9999;
     padding: 5px 50px;
     @media (max-width:996px) {
@@ -10,23 +7,64 @@ header {
     @media (max-width:768px) {
         padding: 5px 15px;
     }
-    position: fixed;
-    background-color: #fff;
-    border-bottom: 1px solid #000;
-    .logo {
-        max-width:230px ;
-        height: auto;
-        a{
-            display: block;
+    .head_right_widget{
+        @media (max-width:1470px ){
+            display: none;
         }
     }
-    .main-menu {                         
+    background-color: #fff;
+    .logo {
+        width: auto;
+        height: auto;
+        a{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            .content{
+                position: relative;
+                h5{
+                    font-size: 30px;
+                    letter-spacing: -1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: #DA1D26;
+                    padding: 7px 7px 12px 7px;
+                    border-radius: 6px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: $white;
+                    margin: -8px 5px 0px 5px;
+                    border: 1px solid #DA1D26;
+                    padding: 0px 5px;
+                    border-radius: 4px;
+                    background-color: #12264A;
+                }
+                h6{
+                    color: #12264A;
+                    font-size: 17px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .main-menu {     
+        @media (max-width:1350px ){
+            display: none;
+        }               
         ul {
             line-height: 1;                   
             > li {
                 display: inline-block;
                 line-height: 1;
-                padding: 10px 15px;
+                padding: 10px 10px;
                 @media (max-width:1210px) {
                     padding: 25px 10px;
                 }
@@ -34,21 +72,11 @@ header {
                     padding: 5px 0px;
                     position: relative;
                     display: inline-block;
-                    font-size: 15px;
+                    font-size: 18px;
                     text-transform: capitalize;
                     line-height: 1;
                     overflow: hidden;
                     color: $black;
-                    &::after{
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        content: "";
-                        width:0%;
-                        height: 1.5px;
-                        background-color: #000;
-                        @include transition(0.4s);
-                    }
                     i {
                         margin-left: 5px;
                     }
@@ -62,32 +90,32 @@ header {
 
                 &:hover {
                     > a {
-                        &::after{
-                            position: absolute;
-                            left: 0;
-                            bottom: 0;
-                            content: "";
-                            width: 100%;
-                            height: 1.5px;
-                            background-color: #000;
-                        }
-                    }
-                }
-                .active{
-                    &::after{
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        content: "";
-                        width: 100%;
-                        height: 1.5px;
-                        background-color: #000;
+                        color: $secondary;
                     }
                 }
             }
         }
     }
-
+    .top_right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .icon{
+            img{
+                width: 40px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .content{
+            h5{
+                color: $black;
+                margin-bottom: 0;
+                font-size: 22px;
+                font-weight: 400px;
+            }
+        }
+    }
     .theme-btn {
         @media (max-width: 1199px) {
             padding: 0.8em 1.336em;
@@ -116,7 +144,6 @@ header {
     right: -380px;
     opacity: 0;
     visibility: hidden;
-    // display: none;
     top: 0;
     width: 320px;
     height: 100vh;
@@ -218,7 +245,7 @@ header {
 }
 
 #hamburger {
-    color: #fff;
+    color: $primary;
     font-size: 36px;
     line-height: 1;
     text-align: right;
@@ -229,14 +256,14 @@ header {
         cursor: pointer;
     }
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1470px) {
         display: block;
     }
 }
 
 .mobile-nav-bar{
     display: none;
-    @media (max-width: 1000px) {
+    @media (max-width: 1350px) {
     display: block !important;
     }
 }

@@ -1,15 +1,19 @@
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,700&family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Signika:wght@400;500;600;700&display=swap');
  
 // Font Family Variable with Value
 
-// font-family: 'Poppins', sans-serif;
-//font-family: 'Roboto', sans-serif;
+//font-family: 'Lato', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Signika', sans-serif;
 
-$heading-font: 'Poppins', sans-serif;
-$body-font: 'Roboto', sans-serif;
+$la: 'Lato', sans-serif;
+
+
+$heading-font: 'Signika', sans-serif;
+$body-font: 'Open Sans', sans-serif;
 
 //font-family: "Font Awesome 5 Pro";
 $fa: "Font Awesome 5 Pro";
@@ -32,6 +36,7 @@ h5,
 h6 {
     font-family: $heading-font;
     margin: 0px;
+    letter-spacing: normal;
     font-weight: 700;    
     color:#ffffff;
 }
@@ -41,9 +46,11 @@ h1 {
     line-height: 55px;
     letter-spacing: -3px;
 
-    @media (max-width: 767px) {
-        font-size: 2rem;
-        line-height: 3rem;
+    @media (max-width:768px) {
+        font-size: 40px;
+    }
+    @media (max-width:508px) {
+        font-size: 35px;
     }
 }
 
@@ -51,6 +58,12 @@ h2 {
     font-size: 36px;
     line-height: 130%;
     letter-spacing: -3px;
+    @media (max-width:768px) {
+        font-size: 33px;
+    }
+    @media (max-width:508px) {
+        font-size: 28px;
+    }
 }
 
 h3 {
@@ -86,10 +99,10 @@ a {
 
 p {
     margin: 0px;
-    font-size: 18px;
-    line-height: 25px;
-    color: $black;
+    color: $text;
     font-family: $body-font;
-    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
 }
 

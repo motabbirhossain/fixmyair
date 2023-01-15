@@ -5333,6 +5333,11 @@
 .fa-people-carry:before {
     content: "\f4ce"
 }
+.fa-people-arrows::before{
+    content: "\e068";
+    font-family: $fa;
+    font-weight: 900;
+}
 
 .fa-pepper-hot:before {
     content: "\f816"
@@ -5384,6 +5389,9 @@
 
 .fa-phone:before {
     content: "\f095"
+}
+.fa-phone-alt::before{
+    content: "\f879";
 }
 
 .fa-phone-office:before {

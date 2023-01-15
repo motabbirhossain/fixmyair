@@ -25,6 +25,11 @@ Author: RRDevs
 			}
 		});
 
+		$('.counter').counterUp({
+			delay: 10,
+			time: 1000
+		});
+
 		new WOW().init();
                 
         /*==========================
@@ -42,54 +47,11 @@ Author: RRDevs
         });
     }); // end document ready function
  
-	$('.brand_widget').owlCarousel({
+	$('.author_review').owlCarousel({
 		loop:true,
-		margin:10,
-		nav: false,
+		margin: 30,
 		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:4
-			}
-		}
-	})
-	$('.brand_widget_2').owlCarousel({
-		rtl:true,
-		loop: true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		margin:10,
-		nav:false,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:4
-			}
-		}
-	})
-
-	$('.card_widget').owlCarousel({
-		loop: true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		margin:10,
-		nav: true,
-		navText: ['<i class="far fa-angle-left"></i>', '<i class="far fa-angle-right"></i>'],
+		autoplayTimeout:2000,
 		responsive:{
 			0:{
 				items:1
@@ -102,35 +64,6 @@ Author: RRDevs
 			},
 			1000:{
 				items:3
-			},
-			1400:{
-				items:4
-			}
-		}
-	})
-	$('.teeth_widget').owlCarousel({
-		loop: true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		margin:10,
-		nav: true,
-		navText: ['<i class="far fa-angle-left"></i>', '<i class="far fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:1
-			},
-			500:{
-				items:1
-			},
-			700:{
-				items:2
-			},
-			1000:{
-				items:3
-			},
-			1400:{
-				items:4
 			}
 		}
 	})
