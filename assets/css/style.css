@@ -1197,7 +1197,7 @@ header .top_right .content h5 {
 .hero_wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-position: left top;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1206,9 +1206,22 @@ header .top_right .content h5 {
       -ms-flex-align: center;
           align-items: center;
 }
+.hero_wrapper .hero-shape {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+}
+.hero_wrapper .hero-shape svg {
+  fill: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
 .banner_title {
   padding: 130px 0px;
+  overflow: hidden;
 }
 @media (max-width: 1080px) {
   .banner_title {
@@ -1264,6 +1277,20 @@ header .top_right .content h5 {
 .banner_title a {
   margin-top: 40px;
   font-size: 30px;
+}
+.banner_title img {
+  border-radius: 50%;
+  max-width: 200px;
+  float: right;
+}
+@media (max-width: 768px) {
+  .banner_title img {
+    width: 100%;
+    display: block;
+    float: none;
+    argin: 0 auto;
+    margin-top: 25px;
+  }
 }
 
 /* ----------------------------------
@@ -1536,6 +1563,8 @@ header .top_right .content h5 {
 .saying_wrapper .single_review .author .author_img img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .saying_wrapper .single_review .author .author_name h4 {
   font-size: 20px;
