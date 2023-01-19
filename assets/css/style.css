@@ -1266,13 +1266,13 @@ header .top_right .content h5 {
   position: relative;
   width: 100%;
   height: 100%;
-  background-position: left top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 .hero_wrapper .hero-shape {
   width: 100%;
@@ -1629,6 +1629,8 @@ header .top_right .content h5 {
 .saying_wrapper .single_review .author .author_img img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .saying_wrapper .single_review .author .author_name h4 {
   font-size: 20px;

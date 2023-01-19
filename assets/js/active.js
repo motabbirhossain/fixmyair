@@ -24,6 +24,7 @@ Author: RRDevs
 				$(".offcanvas-overlay").removeClass("overlay-open");
 			}
 		});
+		$("#mobile-menu").metisMenu();
 
 		$('.counter').counterUp({
 			delay: 10,
