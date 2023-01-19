@@ -20,12 +20,40 @@ header {
             display: flex;
             align-items: center;
             gap: 20px;
+            @media (max-width:470px) {
+                gap: 10px;
+            }
             img{
                 width: 100px;
-                height: 100px;
+                height: auto;
             }
             .content{
                 position: relative;
+                @media (max-width:768px) {
+                    h5{
+                        font-size: 20px !important;
+                    }
+                    p{
+                        font-size: 8px !important;
+                    }
+                    h6{
+                        font-size: 14px !important;
+                    }
+                }
+                @media (max-width:470px) {
+                    h5{
+                        font-size: 17px !important;
+                    }
+                    p{
+                        font-size: 8px !important;
+                    }
+                    h6{
+                        font-size: 10px !important;
+                    }
+                }
+                @media (max-width:387px) {
+                    display: none;
+                }
                 h5{
                     font-size: 30px;
                     letter-spacing: -1px;
@@ -81,6 +109,38 @@ header {
                         margin-left: 5px;
                     }
                 }
+                > ul {
+                    position: absolute;
+                    top: 100%;
+                    width: 200px;
+                    background-color: $white;
+                    left: 0;
+                    z-index: 999;
+                    box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(40px);
+                    transition: all .5s ease-in-out;
+                    padding: 10px 0px;
+                    
+                    li {
+                        display: block;
+                        a { 
+                            display: block;                              
+                            color: #252525;
+                            padding: 12px 25px;
+                            
+                            &:hover {
+                                
+                            }
+                        }
+                    }
+
+                    ul {
+                        left: 100%;
+                        top: 0;
+                    }
+                }
                 &:last-child{
                     margin-right: 40px;
                     @media (max-width:1210px) {
@@ -88,9 +148,20 @@ header {
                     }
                 }
 
+                &.active {
+                    a{
+                        color: $secondary !important;
+                    }
+                }
+                
                 &:hover {
                     > a {
                         color: $secondary;
+                    }
+                    > ul {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
                     }
                 }
             }
