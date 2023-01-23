@@ -1,7 +1,4 @@
-/*
-Template: Cosmetic Dentistry Birmingham Facial Aesthetics
-Author: RRDevs
-*/
+
 
 (function($) {
     "use strict";
@@ -48,11 +45,28 @@ Author: RRDevs
         });
     }); // end document ready function
  
+	$('.hero-slider').owlCarousel({
+		loop: true,
+		items:3,
+		autoplay:true,
+		autoplayTimeout: 4000,
+		nav: true,
+		navText: ['<i class="far fa-angle-left"></i>','<i class="far fa-angle-right"></i>'],
+		responsive:{
+			0:{
+				items:1
+			},
+			1000:{
+				items:1
+			}
+		}
+	})
 	$('.author_review').owlCarousel({
 		loop:true,
 		margin: 30,
 		autoplay:true,
-		autoplayTimeout:2000,
+		autoplayTimeout: 2000,
+		dots:true,
 		responsive:{
 			0:{
 				items:1
