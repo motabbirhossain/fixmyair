@@ -10,6 +10,10 @@
     align-items: center;
     overflow: hidden;
 
+    @media (max-width:767px){
+        height: auto;
+    }
+
     .hero-shape{
         width: 100%;
         position: absolute;
@@ -76,6 +80,7 @@
             float: none;
             argin: 0 auto;
             margin-top: 25px;
+            max-width: 120px;
         }
 
     }
