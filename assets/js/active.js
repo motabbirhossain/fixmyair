@@ -44,12 +44,12 @@
             activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
         });
     }); // end document ready function
- 
+
 	$('.hero-slider').owlCarousel({
 		loop: true,
 		items:3,
-		autoplay:true,
-		autoplayTimeout: 4000,
+		autoplay: true,
+		autoplaySpeed:3000,
 		nav: true,
 		navText: ['<i class="far fa-angle-left"></i>','<i class="far fa-angle-right"></i>'],
 		responsive:{

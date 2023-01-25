@@ -12,6 +12,11 @@
             transform: rotate(360deg);
   }
 }
+
+.owl-carousel .animated { 
+  animation-duration: 1000ms;
+  animation-fill-mode: both; 
+}
 /* ----------------------------------
   All Aniamtion Styles
  ------------------------------------ */

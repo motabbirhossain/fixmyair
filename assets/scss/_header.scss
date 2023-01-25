@@ -347,8 +347,19 @@ header {
         color: #f8f9fa;
         background: $theme-color;
     }
-
+    .sidebar-nav-2{
+        >li{
+            margin: 20px 5px;
+            display: inline-block;
+            width: 80px;
+            height: auto;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
 }
+
 
 #hamburger {
     color: $primary;

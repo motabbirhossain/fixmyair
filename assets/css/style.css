@@ -888,6 +888,13 @@ section {
     transform: rotate(360deg);
   }
 }
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 /* ----------------------------------
   All Aniamtion Styles
  ------------------------------------ */
@@ -1317,6 +1324,16 @@ header .top_right .content h5 {
   text-decoration: none;
   color: #f8f9fa;
   background: #446A78;
+}
+.mobile-nav .sidebar-nav-2 > li {
+  margin: 20px 5px;
+  display: inline-block;
+  width: 80px;
+  height: auto;
+}
+.mobile-nav .sidebar-nav-2 > li img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #hamburger {
