@@ -920,6 +920,11 @@ section {
   position: relative;
   z-index: 1;
 }
+.theme-btn i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: 10px;
+}
 .theme-btn::after {
   top: 0;
   left: 0;
@@ -1441,6 +1446,11 @@ header .top_right .content h5 {
   margin-top: 40px;
   font-size: 30px;
 }
+.banner_title a i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: 10px;
+}
 .banner_title img {
   border-radius: 50%;
   max-width: 200px;
@@ -1889,6 +1899,13 @@ header .top_right .content h5 {
   color: #FFF;
   font-size: 16px;
   font-weight: 600;
+}
+.funfact_widget .single_funfact .icon {
+  margin-top: 10px;
+}
+.funfact_widget .single_funfact .icon i {
+  color: #FFF;
+  font-size: 50px;
 }
 .funfact_widget .single_funfact h2 {
   margin: 20px 0px;

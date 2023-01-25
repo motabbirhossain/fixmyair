@@ -17,6 +17,10 @@
     background-color: $primary;
     box-sizing: border-box;
     position: relative;
+    i{
+        transform: rotate(90deg);
+        margin-right: 10px;
+    }
     z-index: 1;
     &::after{
         top: 0;

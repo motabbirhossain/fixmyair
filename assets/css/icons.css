@@ -5335,8 +5335,6 @@
 }
 .fa-people-arrows::before{
     content: "\e068";
-    font-family: $fa;
-    font-weight: 900;
 }
 
 .fa-pepper-hot:before {
