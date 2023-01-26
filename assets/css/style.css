@@ -1074,8 +1074,21 @@ header .logo a .content h6 {
     margin-top: 5px;
   }
 }
+header .main-menu.main-menu-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 header .main-menu.main-menu-1 ul li {
-  width: 80px;
+  margin: auto;
+  width: 70px;
   height: auto;
 }
 header .main-menu.main-menu-1 ul li a img {
@@ -1098,7 +1111,7 @@ header .main-menu ul {
 header .main-menu ul > li {
   display: inline-block;
   line-height: 1;
-  padding: 10px 10px;
+  padding: 5px;
 }
 header .main-menu ul > li > a {
   padding: 5px 0px;
@@ -1185,13 +1198,8 @@ header .top_right .content h5 {
   font-size: 22px;
   font-weight: 400px;
 }
-@media (max-width: 768px) {
-  header .top_right .content h5 {
-    color: #FFF;
-  }
-  header .top_right .content p {
-    color: #FFF;
-  }
+header .top_right .content a {
+  color: #404040;
 }
 @media (max-width: 1199px) {
   header .theme-btn {

@@ -99,8 +99,13 @@ header {
     .main-menu {     
         &.main-menu-1{
             ul{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
                 li{
-                    width: 80px;
+                    margin: auto;
+                   
+                    width: 70px;
                     height: auto;
                     a{
                         img{
@@ -121,7 +126,7 @@ header {
             > li {
                 display: inline-block;
                 line-height: 1;
-                padding: 10px 10px;
+                padding: 5px;
                 > a {
                     padding: 5px 0px;
                     position: relative;
@@ -209,16 +214,8 @@ header {
                 font-size: 22px;
                 font-weight: 400px;
             }
-        }
-
-        @media (max-width:768px){
-            .content{
-                h5{
-                    color: $white;
-                }
-                p{
-                    color: $white;
-                }
+            a{
+                color:$text;
             }
         }
     }
