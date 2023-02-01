@@ -1015,24 +1015,22 @@ header .menu_bar .offering ul > li {
   line-height: 1;
   padding: 5px 15px;
   position: relative;
-  border-radius: 4px;
-  background-color: #B02332;
 }
 header .menu_bar .offering ul > li > a {
   padding: 5px 0px;
   position: relative;
   display: inline-block;
-  font-weight: bold;
-  font-size: 28px;
-  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize !important;
   line-height: 1;
   overflow: hidden;
-  color: #FFF;
+  color: #B02332;
 }
 header .menu_bar .offering ul > li > ul {
   position: absolute;
   top: 100%;
-  width: 300px;
+  width: 250px;
   background-color: #f3efef;
   left: 0;
   z-index: 999;
@@ -1052,7 +1050,7 @@ header .menu_bar .offering ul > li > ul li {
 }
 header .menu_bar .offering ul > li > ul li a {
   display: block;
-  color: #f47629;
+  color: #B02332;
   text-transform: capitalize !important;
   padding: 10px 20px;
   line-height: 1.2;
