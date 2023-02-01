@@ -997,6 +997,79 @@ header .menu_bar {
     background: #fff;
   }
 }
+@media (max-width: 1080px) {
+  header .menu_bar .offering {
+    display: none !important;
+  }
+}
+header .menu_bar .offering ul {
+  line-height: 1;
+}
+@media (max-width: 1080px) {
+  header .menu_bar .offering ul li > a {
+    font-size: 20px !important;
+  }
+}
+header .menu_bar .offering ul > li {
+  display: inline-block;
+  line-height: 1;
+  padding: 5px 15px;
+  position: relative;
+  border-radius: 4px;
+  background-color: #B02332;
+}
+header .menu_bar .offering ul > li > a {
+  padding: 5px 0px;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: capitalize;
+  line-height: 1;
+  overflow: hidden;
+  color: #FFF;
+}
+header .menu_bar .offering ul > li > ul {
+  position: absolute;
+  top: 100%;
+  width: 300px;
+  background-color: #f3efef;
+  left: 0;
+  z-index: 999;
+  -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+          box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 10px 0px;
+}
+header .menu_bar .offering ul > li > ul li {
+  background-color: transparent !important;
+  display: block;
+}
+header .menu_bar .offering ul > li > ul li a {
+  display: block;
+  color: #f47629;
+  text-transform: capitalize !important;
+  padding: 10px 20px;
+  line-height: 1.2;
+}
+header .menu_bar .offering ul > li > ul ul {
+  left: 100%;
+  top: 0;
+}
+header .menu_bar .offering ul > li:hover > a {
+  color: #f47629;
+}
+header .menu_bar .offering ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
 @media (max-width: 767px) {
   header .container-fluid {
     background: #f3efef;
@@ -1118,6 +1191,13 @@ header .main-menu.main-menu-1 ul li {
   margin: auto;
   width: 60px;
   height: auto;
+}
+header .main-menu.main-menu-1 ul li a.rounded {
+  border: 1px solid #12264a;
+  height: 50px;
+  padding: 1px;
+  border-radius: 500px !important;
+  line-height: 40px;
 }
 header .main-menu.main-menu-1 ul li a img {
   -o-object-fit: cover;

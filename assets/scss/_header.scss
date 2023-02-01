@@ -20,6 +20,80 @@ header {
         @media (max-width:767px) {
             background: #fff;
         }
+        .offering{
+            @media (max-width:1080px) {
+                display: none !important;
+            }  
+            ul {
+                line-height: 1;    
+                @media (max-width:1080px) {
+                    li >a{
+                        font-size: 20px !important;
+                    }
+                }               
+                > li {
+                    display: inline-block;
+                    line-height: 1;
+                    padding: 5px 15px;
+                    position: relative;
+                    border-radius: 4px;
+                    background-color: $offer-text;
+                    > a {
+                        padding: 5px 0px;
+                        position: relative;
+                        display: inline-block;
+                        font-weight: bold;
+                        font-size: 28px;
+                        text-transform: capitalize;
+                        line-height: 1;
+                        overflow: hidden;
+                        color: $white;
+                    }
+                    > ul {
+                        position: absolute;
+                        top: 100%;
+                        width: 300px;
+                        background-color: #f3efef;
+                        left: 0;
+                        z-index: 999;
+                        box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateY(40px);
+                        transition: all .5s ease-in-out;
+                        padding: 10px 0px;
+                        
+                        li {
+                           background-color: transparent !important;
+                            display: block;
+                            a { 
+                                display: block;                              
+                                color: $secondary;
+                                text-transform: capitalize !important;
+                                padding: 10px 20px;
+                                line-height:1.2;
+                            }
+                        }
+    
+                        ul {
+                            left: 100%;
+                            top: 0;
+                        }
+                    }
+                    &:hover {
+                        > a {
+                            color: $secondary;
+                        }
+                        > ul {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(5px);
+                           
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .container-fluid{
@@ -135,6 +209,13 @@ header {
                     width: 60px;
                     height: auto;
                     a{
+                        &.rounded{
+                            border: 1px solid $primary;
+                            height: 50px;
+                            padding: 1px;
+                            border-radius: 500px !important;
+                            line-height: 40px;
+                        }
                         img{
                             object-fit: cover;
                         }
