@@ -95,6 +95,8 @@
             }
         }
         .owl-prev{
+            border: 1px solid #666666;
+            color: #666666;
             top: calc(100% - 50%);
             left: calc(100% - 95%);
             @media (max-width:768px) {
