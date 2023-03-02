@@ -299,3 +299,95 @@
         }
     }
 }
+
+
+/* ----------------------------------
+   company_wrapper Section Styles
+ ------------------------------------ */
+.company_wrapper{
+    .section-title_2{
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        h3{
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 24px;
+            font-family: $body_font;
+            color: $black;
+            background-color: $white;
+            padding: 0px 20px;
+        }
+        &::after{
+            z-index: -1;
+            left: 0%;
+            top: 55%;
+            position: absolute;
+            content: '';
+            clear: both;
+            width: 100%;
+            height: 2px;
+            background-color: #666666;
+            border-radius: 50px;
+        }
+    }
+    .company_logo_widget{
+        .logo_items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        position: relative;
+        .owl-nav.disabled {
+            display: block !important; 
+        }
+
+        .owl-prev{
+            display: inline-block;
+            position: absolute;
+            top: calc(20% + 10px);
+            left: 0%;
+            i{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        .owl-next{
+            display: inline-block;
+            position: absolute;
+            top: calc(20% + 10px);
+            right:0%;
+            i{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.funfact_wrapper_2{
+    @include overlay($secondary, 0.50);
+    background-attachment: fixed;
+    background-position: left top;
+    .funfact_widget{
+        padding: 0px;
+        border: none;
+        .single_funfact{
+            padding: 30px 0px 0px 0px;
+            background-color: transparent;
+            .icon{
+                margin-top: 10px;
+                i{
+                    color: $white;
+                    font-size: 50px;
+                }
+            }
+            h2{
+                margin: 20px 0px;
+                color: $white;
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+}

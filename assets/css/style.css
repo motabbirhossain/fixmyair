@@ -3,7 +3,7 @@ Template: HVAC Repair, Generators, Fireplaces, Chimney Services - OHA
 Author: RRDevs
 Author URI: https://fixmyair.com/
 Description:Cosmetic Dentistry Birmingham 
-Version: 1.0
+Version: 3.1
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,700&family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Signika:wght@400;500;600;700&display=swap");
 * {
@@ -1992,6 +1992,113 @@ header .top_right .content a {
 }
 .single_item:last-child .icon_widget::before {
   display: none !important;
+}
+
+/* ----------------------------------
+   company_wrapper Section Styles
+ ------------------------------------ */
+.company_wrapper .section-title_2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.company_wrapper .section-title_2 h3 {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  background-color: #FFF;
+  padding: 0px 20px;
+}
+.company_wrapper .section-title_2::after {
+  z-index: -1;
+  left: 0%;
+  top: 55%;
+  position: absolute;
+  content: "";
+  clear: both;
+  width: 100%;
+  height: 2px;
+  background-color: #666666;
+  border-radius: 50px;
+}
+.company_wrapper .company_logo_widget {
+  position: relative;
+}
+.company_wrapper .company_logo_widget .logo_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.company_wrapper .company_logo_widget .owl-nav.disabled {
+  display: block !important;
+}
+.company_wrapper .company_logo_widget .owl-prev {
+  display: inline-block;
+  position: absolute;
+  top: calc(20% + 10px);
+  left: 0%;
+}
+.company_wrapper .company_logo_widget .owl-prev i {
+  font-size: 24px;
+  font-weight: 700;
+}
+.company_wrapper .company_logo_widget .owl-next {
+  display: inline-block;
+  position: absolute;
+  top: calc(20% + 10px);
+  right: 0%;
+}
+.company_wrapper .company_logo_widget .owl-next i {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.funfact_wrapper_2 {
+  z-index: 1;
+  position: relative;
+  background-attachment: fixed;
+  background-position: left top;
+}
+.funfact_wrapper_2:before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: rgba(244, 118, 41, 0.5);
+  -webkit-transition: all all 0.3s ease ease-in-out;
+  transition: all all 0.3s ease ease-in-out;
+}
+.funfact_wrapper_2 .funfact_widget {
+  padding: 0px;
+  border: none;
+}
+.funfact_wrapper_2 .funfact_widget .single_funfact {
+  padding: 30px 0px 0px 0px;
+  background-color: transparent;
+}
+.funfact_wrapper_2 .funfact_widget .single_funfact .icon {
+  margin-top: 10px;
+}
+.funfact_wrapper_2 .funfact_widget .single_funfact .icon i {
+  color: #FFF;
+  font-size: 50px;
+}
+.funfact_wrapper_2 .funfact_widget .single_funfact h2 {
+  margin: 20px 0px;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 /* ----------------------------------

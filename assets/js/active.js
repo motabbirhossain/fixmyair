@@ -25,7 +25,7 @@
 
 		$('.counter').counterUp({
 			delay: 10,
-			time: 1000
+			time: 2000
 		});
 
 		new WOW().init();
@@ -62,25 +62,48 @@
 		}
 	})
 	$('.author_review').owlCarousel({
-		loop:true,
+		loop: true,
 		margin: 30,
-		autoplay:true,
+		autoplay: true,
 		autoplayTimeout: 2000,
-		dots:true,
-		responsive:{
-			0:{
-				items:1
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
 			},
-			500:{
-				items:1
+			500: {
+				items: 1
 			},
-			700:{
-				items:2
+			700: {
+				items: 2
 			},
-			1000:{
-				items:3
+			1000: {
+				items: 3
 			}
 		}
-	})
+	});
+	$('.company_logo_widget').owlCarousel({
+		loop: true,
+		items:6,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		dots:false,
+		nav: true,
+		navText: ['<i class="far fa-angle-left"></i>','<i class="far fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			500: {
+				items: 2
+			},
+			700: {
+				items: 5
+			},
+			1000: {
+				items: 6
+			}
+		}
+	});
 
 })(jQuery); // End jQuery
