@@ -116,3 +116,9 @@
         margin: 0 auto;
     }
 }
+.container{
+    @media (min-width:1920px) {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}

@@ -437,6 +437,13 @@ p {
   }
 }
 
+@media (min-width: 1920px) {
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
@@ -980,21 +987,21 @@ header {
   z-index: 9999;
   background-color: #fff;
 }
-header .menu_bar, header .container-fluid {
+header .container-fluid {
   padding: 5px 50px;
 }
 @media (max-width: 1260px) {
-  header .menu_bar, header .container-fluid {
+  header .container-fluid {
     padding: 5px 20px;
   }
 }
 @media (max-width: 996px) {
-  header .menu_bar, header .container-fluid {
+  header .container-fluid {
     padding: 5px 20px;
   }
 }
 @media (max-width: 768px) {
-  header .menu_bar, header .container-fluid {
+  header .container-fluid {
     padding: 5px 15px;
   }
 }
