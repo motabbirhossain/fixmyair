@@ -16,10 +16,6 @@ header {
     }
     .menu_bar{
         background: #f3efef;
-
-        @media (max-width:767px) {
-            background: #fff;
-        }
         .offering{
             @media (max-width:1080px) {
                 display: none !important;
@@ -103,7 +99,7 @@ header {
     .head_right_widget{
         display:flex;
 
-        @media (max-width:768px ){
+        @media (max-width:990px ){
             display: none;
         }
 
@@ -203,8 +199,7 @@ header {
                 flex-direction: row;
                 li{
                     margin: auto;
-                   
-                    width: 60px;
+                    width: 70px;
                     height: auto;
                     a{
                         &.rounded{
@@ -220,7 +215,7 @@ header {
                     }
                 }
             }
-            @media (max-width:1200px ){
+            @media (max-width:1560px ){
                 display: none;
             } 
         }
@@ -522,14 +517,14 @@ header {
         cursor: pointer;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 990px) {
         display: block;
     }
 }
 
 .mobile-nav-bar{
     display: none;
-    @media (max-width: 768px) {
-    display: block !important;
+    @media (max-width: 990px) {
+        display: block !important;
     }
 }

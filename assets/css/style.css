@@ -430,6 +430,13 @@ p {
   }
 }
 
+@media (min-width: 1920px) {
+  .container-fluid {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
@@ -994,11 +1001,6 @@ header .menu_bar, header .container-fluid {
 header .menu_bar {
   background: #f3efef;
 }
-@media (max-width: 767px) {
-  header .menu_bar {
-    background: #fff;
-  }
-}
 @media (max-width: 1080px) {
   header .menu_bar .offering {
     display: none !important;
@@ -1080,7 +1082,7 @@ header .head_right_widget {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   header .head_right_widget {
     display: none;
   }
@@ -1189,7 +1191,7 @@ header .main-menu.main-menu-1 ul {
 }
 header .main-menu.main-menu-1 ul li {
   margin: auto;
-  width: 60px;
+  width: 70px;
   height: auto;
 }
 header .main-menu.main-menu-1 ul li a.rounded {
@@ -1203,7 +1205,7 @@ header .main-menu.main-menu-1 ul li a img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1560px) {
   header .main-menu.main-menu-1 {
     display: none;
   }
@@ -1525,7 +1527,7 @@ header .top_right .content a {
 #hamburger i {
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   #hamburger {
     display: block;
   }
@@ -1534,7 +1536,7 @@ header .top_right .content a {
 .mobile-nav-bar {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .mobile-nav-bar {
     display: block !important;
   }
