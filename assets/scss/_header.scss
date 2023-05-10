@@ -98,7 +98,7 @@ header {
 
     .head_right_widget{
         display:flex;
-
+        align-items: center;
         @media (max-width:990px ){
             display: none;
         }
@@ -204,18 +204,33 @@ header {
                     a{
                         &.rounded{
                             border: 1px solid $primary;
-                            height: 50px;
+                            height: 60px;
                             padding: 1px;
                             border-radius: 500px !important;
                             line-height: 40px;
+                            @media (max-width:1560px ){
+                                height: 35px;
+                                line-height: 25px;
+                            }
+                            @media (max-width:990px ){
+                                height: 50px;
+                                line-height: 40px;
+                            }
+                            
                         }
                         img{
                             object-fit: cover;
                         }
                     }
+                    @media (max-width:1560px ){
+                        width: 45px;
+                    }
+                    @media (max-width:990px ){
+                        width: 60px;
+                    }
                 }
             }
-            @media (max-width:1560px ){
+            @media (max-width:992px ){
                 display: none;
             } 
         }
@@ -300,7 +315,7 @@ header {
     }
     .top_right{
         display: flex;
-        align-items: center;
+        align-items: center !important;
         gap: 10px;
 
         @media(max-width: 767px){
@@ -329,6 +344,9 @@ header {
             }
         }
         .content{
+            @media(max-width: 1577px){
+                display: none !important;
+            }
             h5{
                 color: $black;
                 margin-bottom: 0;
